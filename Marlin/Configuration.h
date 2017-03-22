@@ -612,8 +612,8 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 150 // medido con el pampa
-#define Y_MAX_POS 190 // medido con el pampa
+#define X_MAX_POS 190 // medido con el pampa
+#define Y_MAX_POS 185 // medido con el pampa
 #define Z_MAX_POS 120 // medido con el pampa
 
 //===========================================================================
@@ -753,7 +753,7 @@
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {150,130.72,7972.33,229}    // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {130.72,150,7972.33,229}    // default steps per unit for Ultimaker
 #define DEFAULT_MAX_FEEDRATE          {300, 300, 1, 25}           // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}       // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
