@@ -614,7 +614,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS 190 // medido con el pampa
 #define Y_MAX_POS 185 // medido con el pampa
-#define Z_MAX_POS 120 // medido con el pampa
+#define Z_MAX_POS 105 // medido con el pampa
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
@@ -753,17 +753,17 @@
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {130.72,150,7972.33,229}    // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 1, 25}           // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {128.78,148.51,7972.33,229}    // default steps per unit for Ultimaker
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 1, 3.5}           // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}       // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
+#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  1500    // E acceleration in mm/s^2 for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   1500    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
-#define DEFAULT_XYJERK                20.0    // (mm/sec)
-#define DEFAULT_ZJERK                 0.4     // (mm/sec)
+#define DEFAULT_XYJERK                8.0    // (mm/sec)
+#define DEFAULT_ZJERK                 0.2     // (mm/sec)
 #define DEFAULT_EJERK                 5.0     // (mm/sec)
 
 
@@ -781,7 +781,7 @@
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //define this to enable EEPROM support
-//#define EEPROM_SETTINGS
+#define EEPROM_SETTINGS
 
 #if ENABLED(EEPROM_SETTINGS)
   // To disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out:
