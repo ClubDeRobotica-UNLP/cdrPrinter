@@ -286,14 +286,16 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
-  #define  DEFAULT_Kp 25.72 // constantes actualizadas
+  #define  DEFAULT_Kp 34.75  // Constantes PID 18/07/16
+  #define  DEFAULT_Ki 3.88
+  #define  DEFAULT_Kd 77.72
+
+  /*
+  #define  DEFAULT_Kp 25.72 // constantes Viejas
   #define  DEFAULT_Ki 2.52  // con PID 14/10/16 16:30
   #define  DEFAULT_Kd 65.74
-  /*
-  #define  DEFAULT_Kp 39.93     configuracion vieja
-  #define  DEFAULT_Ki 2.03
-  #define  DEFAULT_Kd 196.28
-*/
+  */
+  
   // MakerGear
   //#define  DEFAULT_Kp 7.0
   //#define  DEFAULT_Ki 0.1
