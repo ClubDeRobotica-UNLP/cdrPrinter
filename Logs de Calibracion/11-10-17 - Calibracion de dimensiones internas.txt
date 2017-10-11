@@ -1,0 +1,23 @@
+11/10/17
+
+Calibracion de la Corrección de tamaño horizontal:
+
+Objetivo: 
+	- Se busca corregir las dimensiones de los huecos internos
+	  de las piezas impresas para evitar los problemas que conllevan.
+
+Desarrollo:
+
+	Siguiendo las indiciaciones de esta página -> https://www.thingiverse.com/thing:1747770 <-
+	se imprimio la pieza denominada Part1 y se procedió a realizar las medidas.
+
+	X: OD = 59.0 mm ; ID = 39.2 mm
+	Y: OD = 59.1 mm ; ID = 39.4 mm
+
+	En base a los resultados, se calculan los nuevos steps y la correccion horizontal como
+	   - newSteps = stepsViejos * (100mm / (ID + OD))
+	   - horizontaSizeCorrection = (OD - ID -20 mm) / 4
+
+	X: newSteps = 128.78 * (100 / (59.0 + 39.2)) = 131.14
+	Y: newSteps = 148.51 * (100 / (59.1 + 39.4)) = 150.77
+	Corrección = (OD - ID - 20 mm) / 4 = [-0.075 ; -0.05]
